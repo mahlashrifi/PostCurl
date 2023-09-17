@@ -1,0 +1,9 @@
+
+GET
+star http://apapi.haditabatabaei.ir/tests/get/buffer/picbgcolor=rgb(17,45,83)text=Happy --output new.png
+star http://apapi.haditabatabaei.ir/tests/get/file -i
+POST
+star http://apapi.haditabatabaei.ir/tests/post/urlencoded -M POST -H "Content-Type: application/x-www-form-urlencoded" -d "hello = world"  --data "id =35" -i
+star http://apapi.haditabatabaei.ir/tests/post/json --method POST --json '{"university" :"aut" , "id"  : "35"} ' -i
+star http://apapi.haditabatabaei.ir/tests/post/formdata -d " hello = world "  --data "file =@src/main/resources/SavedResponses/test.png" --method POST -i
+star http://apapi.haditabatabaei.ir/tests/post/binary  --method POST --upload "C:\Users\My NoteBook\Desktop\Star\src\main\resources\SavedResponses" -i 

@@ -1,0 +1,49 @@
+
+star : First word of command always should be "Star" ,"STar",etc(It is not case sensitive).
+Url : Second String should be the URN of host .
+
+Argument than can be where ever in command :
+
+Method of request : (--method) or (-M) 
+examle : --method POST (method can be on of these words : GET,POST,PUT,DELETE,PATCH)
+
+Display headers with the body of response : (-i)
+
+Just Display headers without showing body of response : (-I)
+
+Enter a header :(-H) or (--hedaer) one header should entered after this argument .
+examle : -H name:mahla  --header id:35
+
+Set request to follow redirects : (-f)
+
+Form data message body : (-d) or (--data) , one data should entered after this argument .
+if you have more than one data use more than one from this argument
+example : -d "name=mahla"  -d "hello=world"
+
+Json message body : (-j) or (--json) 
+after this you should entered a json object.
+
+Binary file as message body : (--upload) 
+after this argument an absolute path should be entered .
+
+Arguments that should enter at the end of command :
+
+To save body response : (-O) or (--output) 
+this argument should be the las argument of command
+after this argument a file name can be enter . If no file name is entered
+programme will save the response by its date .
+
+Save request : (--save) (Group name that request should save in it)
+
+Example of other command :
+
+Star list : show the name of request groups .
+
+Star list example : show the save requests of example group
+
+Star create example : Creates a group called example
+
+Star fire example 2 5 : Executes requests 2 and 5 from the example group
+ 
+Star --help/-h : Shows instructions for acceptable program commands :)
+ 
